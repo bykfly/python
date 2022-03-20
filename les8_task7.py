@@ -9,7 +9,7 @@ class ComplexNumber:
 
     def __mul__(self, other):
         print(f'Произведение комплексных чисел равно')
-        return f'z = {self.a * other.a - (self.b * other.b)} + {self.b * other.a} * i'
+        return f'z = {self.a * other.a} + {self.b * other.b} * i'
 
     def __str__(self):
         return f'Комплексное число = {self.a} + {self.b} * i'
