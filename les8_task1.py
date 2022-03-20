@@ -7,7 +7,7 @@ class Data:
         my_date = []
 
         for i in day_month_year.split():
-            if i != '-': my_date.append(i)
+            if i != ';': my_date.append(i)
 
         return int(my_date[0]), int(my_date[1]), int(my_date[2])
 
@@ -25,10 +25,10 @@ class Data:
         else:
             return f'Проверьте день'
 
-today = Data('13 - 3 - 2022')
+today = Data('20 ; 3 ; 2022')
 
 print(Data.valid(13, 3, 2022))
 print(today.valid(3, 13, 2022))
-print(Data.extract('1 - 1 - 2022'))
-print(today.extract('11 - 11 - 2020'))
+print(Data.extract('1 ; 1 ; 2022'))
+
 
